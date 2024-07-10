@@ -1,0 +1,63 @@
+body{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.btn-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container.active{
+  background-color: rgb(195, 0, 0);
+}
+
+.btn{
+  width: 100px;
+}
+
+.clip{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  background-color: rgb(195, 0, 0);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%,-50%) scale(0);
+  transition: 0.5s;
+}
+
+.close{
+  margin-right: 10px;
+  margin-bottom: 50px;
+  font-size: large;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+video{
+
+  width: 80%;
+  height: 70%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.clip.active{
+  transform: translate(-50%,-50%) scale(1);
+}
+
+@media (max-width: 470px) {
+  .logo {
+    font-size: 1.7rem;
+  }
+}
