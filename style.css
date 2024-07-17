@@ -20,12 +20,12 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .title h1{
   color: white;
-  text-shadow: white 10px;
+  font-size: 60px;
 }
 
 .thumbnail-container{
@@ -105,6 +105,9 @@ a {
   .links{
     flex-direction: column;
   }
+  .title h1{
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 470px) {
@@ -112,5 +115,8 @@ a {
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
     justify-items: center;
+  }
+  .title h1{
+    font-size: 30px;
   }
 }
