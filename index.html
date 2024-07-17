@@ -7,13 +7,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="btn-container">
-    <img class="btn" src="assets/images/play.png" alt="button">
+  <div class="title">
+    <h1>Video Player</h1>
   </div>
-  <div class="clip">
-    <div class="close">close</div>
-    <video src="assets/video/Closer.mp4"></video>
+  <div class="thumbnail-container" id="thumbnail-container" image-path="assets/images" image-base="play" video-path="assets/video" video-base="video">
+
   </div>
+  <div id="Full-video-container" class="modal">
+    <video class="Full-Video" id="Full-video"></video>
+  </div>
+  <section id="footer" class="footer">
+    <p class="copyright">&copy; Fast <span class="n">N</span> Food</p>
+    <div class="links">
+      <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+      <a href="#features" class="nav-link p-0 text-body-secondary">Features</a>
+      <a href="#pricing" class="nav-link p-0 text-body-secondary">Pricing</a>
+      <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+      <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+    </div>
+  </section>
   <script src="script.js"></script>
 </body>
 </html>
